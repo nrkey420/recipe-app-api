@@ -31,4 +31,10 @@ class CommandTests(SimpleTestCase):
         call_command('wait_for_db')
 
         self.assertEqual(patched_check.call_count, 6)
+<<<<<<< Updated upstream
         patched_check.assert_called_with(databases=['default'])
+=======
+        patched_check.assert_called_with(databases=['default'])
+        
+   
+>>>>>>> Stashed changes
